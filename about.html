@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — STUDIO MORPHÉ</title>
+    <meta name="description" content="About Studio Morphé — an independent interior design and architecture journal. Learn about our editorial mission, team, and values.">
+    <link rel="canonical" href="https://www.studiomorphe.com/about.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="About — STUDIO MORPHÉ">
+    <meta property="og:description" content="Independent editorial on interior design and architecture. Our mission, team, and values.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.studiomorphe.com/about.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Studio Morphé",
+      "description": "Independent interior design & architecture publication.",
+      "url": "https://www.studiomorphe.com/about.html",
+      "author": {
+        "@type": "Person",
+        "name": "Elena Marchetti"
+      }
+    }
+    </script>
+    <style>
+        /* ----- RESET & BASE ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #faf9f7;
+            color: #1e1e1e;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 17px;
+        }
+
+        /* ----- TYPOGRAPHY ----- */
+        h1, h2, h3, h4 {
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 450;
+            letter-spacing: -0.03em;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 480;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.4rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: #2c2c2c;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        a:hover {
+            color: #9b6b4b;
+        }
+
+        .serif {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+        }
+
+        /* ----- LAYOUT ----- */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .blog-layout {
+            display: flex;
+            gap: 48px;
+            margin: 48px 0 64px;
+        }
+
+        .main-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 1024px) {
+            .blog-layout {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                margin-top: 48px;
+            }
+        }
+
+        /* ----- HEADER ----- */
+        .site-header {
+            border-bottom: 1px solid #e2e0dd;
+            padding: 24px 0;
+            background: #faf9f7;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            backdrop-filter: blur(8px);
+            background-color: rgba(250, 249, 247, 0.92);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .logo {
+            font-size: 1.9rem;
+            font-weight: 450;
+            letter-spacing: -0.04em;
+            font-family: 'Georgia', serif;
+            color: #1e1e1e;
+            line-height: 1.1;
+        }
+
+        .logo span {
+            font-style: italic;
+            font-weight: 400;
+            color: #9b6b4b;
+        }
+
+        .nav {
+            display: flex;
+            gap: 32px;
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #4a4a4a;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .nav a {
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
+        }
+
+        .nav a:hover {
+            border-bottom-color: #9b6b4b;
+            color: #1e1e1e;
+        }
+
+        .nav a.active {
+            border-bottom-color: #9b6b4b;
+            color: #1e1e1e;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav {
+                gap: 20px;
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        /* ----- ABOUT PAGE SPECIFIC ----- */
+        .about-hero {
+            margin: 48px 0 40px;
+            border-bottom: 1px solid #e2e0dd;
+            padding-bottom: 40px;
+        }
+
+        .about-hero h1 {
+            margin-bottom: 16px;
+        }
+
+        .about-hero .lead {
+            font-size: 1.25rem;
+            color: #4a4a4a;
+            max-width: 780px;
+            line-height: 1.5;
+        }
+
+        .about-section {
+            margin-bottom: 56px;
+        }
+
+        .about-section h2 {
+            margin-bottom: 24px;
+            font-size: 1.8rem;
+        }
+
+        .about-section h3 {
+            margin-top: 32px;
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+        }
+
+        .about-section p {
+            max-width: 780px;
+            font-size: 1.02rem;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 32px 0;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+
+        .team-member {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #eceae7;
+        }
+
+        .team-member:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .team-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            background: #eceae7;
+        }
+
+        .team-member .member-info h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .team-member .member-info .role {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #9b6b4b;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .team-member .member-info p {
+            font-size: 0.95rem;
+            color: #4a4a4a;
+            margin-bottom: 0;
+        }
+
+        .values-list {
+            list-style: none;
+            margin: 24px 0;
+        }
+
+        .values-list li {
+            padding: 16px 0;
+            border-bottom: 1px solid #eceae7;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .values-list li:last-child {
+            border-bottom: none;
+        }
+
+        .values-list .value-icon {
+            font-size: 1.4rem;
+            color: #9b6b4b;
+            width: 32px;
+            flex-shrink: 0;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .values-list .value-text h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .values-list .value-text p {
+            font-size: 0.95rem;
+            color: #4a4a4a;
+            margin-bottom: 0;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin: 32px 0;
+        }
+
+        @media (max-width: 768px) {
+            .stat-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 24px 12px;
+            background: #f3f1ee;
+            border-radius: 2px;
+        }
+
+        .stat-item .stat-number {
+            font-size: 2rem;
+            font-weight: 500;
+            color: #1e1e1e;
+            font-family: 'Georgia', serif;
+            line-height: 1.2;
+        }
+
+        .stat-item .stat-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #6b6b6b;
+            margin-top: 6px;
+        }
+
+        .about-image-full {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            margin: 32px 0;
+            border-radius: 2px;
+            background: #eceae7;
+        }
+
+        .editorial-note {
+            background: #f3f1ee;
+            padding: 32px;
+            border-radius: 2px;
+            margin: 40px 0;
+            border-left: 3px solid #9b6b4b;
+        }
+
+        .editorial-note p {
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #2c2c2c;
+            margin-bottom: 12px;
+        }
+
+        .editorial-note .attribution {
+            font-size: 0.9rem;
+            font-style: normal;
+            color: #6b6b6b;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* ----- SIDEBAR (reused) ----- */
+        .sidebar-widget {
+            margin-bottom: 44px;
+        }
+
+        .sidebar-widget h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #6b6b6b;
+            margin-bottom: 18px;
+            font-weight: 500;
+            border-bottom: 1px solid #e2e0dd;
+            padding-bottom: 10px;
+        }
+
+        .sidebar-widget ul {
+            list-style: none;
+        }
+
+        .sidebar-widget li {
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .sidebar-widget li a {
+            display: block;
+            font-weight: 450;
+        }
+
+        .sidebar-widget .small-meta {
+            font-size: 0.78rem;
+            color: #8a8a8a;
+            margin-top: 4px;
+        }
+
+        .about-widget {
+            background: #f3f1ee;
+            padding: 24px;
+            border-radius: 2px;
+        }
+
+        .about-widget p {
+            font-size: 0.92rem;
+            color: #3a3a3a;
+            margin-bottom: 16px;
+        }
+
+        .about-widget .author-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* ----- NEWSLETTER (reused) ----- */
+        .newsletter-section {
+            background: #f3f1ee;
+            padding: 48px 32px;
+            margin: 64px 0;
+            border-radius: 2px;
+            text-align: center;
+        }
+
+        .newsletter-section h3 {
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+
+        .newsletter-section p {
+            max-width: 500px;
+            margin: 0 auto 24px;
+            color: #4a4a4a;
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 440px;
+            margin: 0 auto;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            min-width: 200px;
+            padding: 12px 16px;
+            border: 1px solid #d6d2cd;
+            background: #fff;
+            font-family: inherit;
+            font-size: 0.95rem;
+            border-radius: 2px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .newsletter-form input:focus {
+            border-color: #9b6b4b;
+        }
+
+        .newsletter-form button {
+            background: #1e1e1e;
+            color: #fff;
+            border: none;
+            padding: 12px 28px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: background 0.2s;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        .newsletter-form button:hover {
+            background: #9b6b4b;
+        }
+
+        /* ----- FOOTER (reused) ----- */
+        .site-footer {
+            border-top: 1px solid #e2e0dd;
+            padding: 56px 0 32px;
+            margin-top: 64px;
+            font-size: 0.9rem;
+            color: #5a5a5a;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 48px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        .footer-grid h5 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #1e1e1e;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+
+        .footer-grid ul {
+            list-style: none;
+        }
+
+        .footer-grid li {
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #e2e0dd;
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.82rem;
+            color: #7a7a7a;
+        }
+
+        .footer-logo {
+            font-family: 'Georgia', serif;
+            font-size: 1.4rem;
+            letter-spacing: -0.03em;
+            color: #1e1e1e;
+        }
+
+        /* ----- UTILITY ----- */
+        .section-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #9b6b4b;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .text-muted {
+            color: #7a7a7a;
+        }
+
+        .mt-4 {
+            margin-top: 24px;
+        }
+
+        .mb-4 {
+            margin-bottom: 24px;
+        }
+
+        /* image alt styling for broken images */
+        img {
+            background: #eceae7;
+            color: #7a7a7a;
+            font-size: 0.8rem;
+        }
+
+        /* ----- RESPONSIVE ADJUSTMENTS ----- */
+        @media (max-width: 600px) {
+            body {
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 1.9rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+            .container {
+                padding: 0 18px;
+            }
+            .newsletter-section {
+                padding: 32px 20px;
+            }
+            .stat-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+            .stat-item .stat-number {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">STUDIO <span>MORPHÉ</span></div>
+        <nav class="nav" aria-label="Main navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+        </nav>
+    </div>
+</header>
+
+<!-- ========== MAIN CONTENT ========== -->
+<main class="container">
+    <!-- ABOUT HERO -->
+    <div class="about-hero">
+        <div class="section-label">About Studio Morphé</div>
+        <h1 class="serif">We write about the spaces that shape us.</h1>
+        <p class="lead">Studio Morphé is an independent editorial journal exploring interior design, architecture, and the built environment — from the smallest material detail to the largest urban gesture.</p>
+    </div>
+
+    <div class="blog-layout">
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+
+            <!-- MISSION SECTION -->
+            <section class="about-section">
+                <h2>Our Mission</h2>
+                <p>In a world of fleeting trends and disposable content, Studio Morphé exists to slow things down. We publish in-depth, carefully researched articles that examine not just <em>what</em> is being built, but <em>why</em> — and how it affects the way we live.</p>
+                <p>We believe that good design is not a luxury reserved for the few. It is a fundamental part of how we experience daily life, and it deserves serious, accessible, and independent coverage. That's why we don't accept sponsored posts or native advertising. Our editorial decisions are ours alone.</p>
+                <p>From practical guides on choosing materials to critical essays on the future of housing, our goal is to inform, provoke, and inspire — without ever talking down to our readers.</p>
+            </section>
+
+            <!-- IMAGE -->
+            <img class="about-image-full" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=500&fit=crop" alt="Minimalist interior with neutral tones, natural light, and considered furniture arrangement">
+
+            <!-- WHAT WE COVER -->
+            <section class="about-section">
+                <h2>What We Cover</h2>
+                <p>Our editorial scope is broad but focused. We cover the full spectrum of the built environment, with a particular emphasis on:</p>
+                <ul class="values-list">
+                    <li>
+                        <div class="value-icon">◈</div>
+                        <div class="value-text">
+                            <h4>Interior Design</h4>
+                            <p>Residential and commercial interiors, color theory, spatial composition, and the art of making a room feel whole.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="value-icon">◈</div>
+                        <div class="value-text">
+                            <h4>Architecture</h4>
+                            <p>Residential architecture, adaptive reuse, sustainable building practices, and the evolving relationship between structure and site.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="value-icon">◈</div>
+                        <div class="value-text">
+                            <h4>Materials & Craft</h4>
+                            <p>Wood, stone, concrete, metal, and emerging bio-materials — how they perform, how they age, and how to specify them well.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="value-icon">◈</div>
+                        <div class="value-text">
+                            <h4>Space Planning</h4>
+                            <p>Layout strategies, circulation, zoning, and the invisible logic that makes a home function effortlessly.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="value-icon">◈</div>
+                        <div class="value-text">
+                            <h4>Lighting & Atmosphere</h4>
+                            <p>Natural and artificial light, layering, color temperature, and the sensory experience of a space.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- STATS -->
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <div class="stat-number">2019</div>
+                    <div class="stat-label">Founded</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">140+</div>
+                    <div class="stat-label">Articles Published</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12k</div>
+                    <div class="stat-label">Monthly Readers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Sponsored Posts</div>
+                </div>
+            </div>
+
+            <!-- EDITORIAL NOTE -->
+            <div class="editorial-note">
+                <p>“We are not here to chase trends. We are here to understand them — and to ask what they mean for the way we live.”</p>
+                <div class="attribution">— Elena Marchetti, Editor-in-Chief</div>
+            </div>
+
+            <!-- TEAM SECTION -->
+            <section class="about-section">
+                <h2>The Team</h2>
+                <p>Studio Morphé is edited by a small, dedicated team of writers and researchers. We work with a network of contributing architects, designers, and photographers to bring depth and perspective to every story.</p>
+
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=160&h=160&fit=crop&crop=face" alt="Portrait of Elena Marchetti, Editor-in-Chief">
+                    <div class="member-info">
+                        <h4>Elena Marchetti</h4>
+                        <div class="role">Editor-in-Chief</div>
+                        <p>Elena is an interiors writer and former practicing architect. She founded Studio Morphé in 2019 after a decade of writing for design magazines across Europe. She is based in Milan.</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=160&h=160&fit=crop&crop=face" alt="Portrait of Julian Hart, Senior Editor">
+                    <div class="member-info">
+                        <h4>Julian Hart</h4>
+                        <div class="role">Senior Editor</div>
+                        <p>Julian covers architecture, urbanism, and sustainable building. He has written for publications in London, New York, and Tokyo, and he holds a master's degree in architectural history.</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=160&h=160&fit=crop&crop=face" alt="Portrait of Dr. Amara Osei, Contributing Editor">
+                    <div class="member-info">
+                        <h4>Dr. Amara Osei</h4>
+                        <div class="role">Contributing Editor — Sustainability</div>
+                        <p>Amara is an environmental scientist and writer specializing in climate-responsive design. She contributes long-form investigations on materials, energy, and the future of construction.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VALUES -->
+            <section class="about-section">
+                <h2>Our Values</h2>
+                <p>Everything we publish is guided by a set of editorial principles that we take seriously:</p>
+                <ul class="values-list">
+                    <li>
+                        <div class="value-icon">1</div>
+                        <div class="value-text">
+                            <h4>Independence</h4>
+                            <p>We do not accept sponsored content, paid placements, or affiliate-driven recommendations. Our only obligation is to our readers.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="value-icon">2</div>
+                        <div class="value-text">
+                            <h4>Depth over speed</h4>
+                            <p>We would rather publish one thoroughly researched article than ten shallow ones. We take the time to verify facts, interview experts, and consider multiple perspectives.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="value-icon">3</div>
+                        <div class="value-text">
+                            <h4>Accessibility</h4>
+                            <p>Design writing should not be exclusive. We explain complex ideas clearly, without jargon or condescension, so that both professionals and curious homeowners can benefit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="value-icon">4</div>
+                        <div class="value-text">
+                            <h4>Sustainability</h4>
+                            <p>We believe the built environment has a responsibility to the planet. We prioritize coverage of sustainable materials, passive design, and low-impact construction.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- CONTACT INVITE -->
+            <section class="about-section">
+                <h2>Get in Touch</h2>
+                <p>We welcome tips, story ideas, and feedback from our readers. If you have a project you think we should know about, or if you'd like to contribute, please reach out.</p>
+                <p>You can contact us at <a href="mailto:hello@studiomorphe.com" style="border-bottom: 1px solid #9b6b4b;">hello@studiomorphe.com</a> or through our <a href="contact.html" style="border-bottom: 1px solid #9b6b4b;">contact page</a>.</p>
+            </section>
+
+            <!-- NEWSLETTER -->
+            <section class="newsletter-section">
+                <h3 class="serif">The Morphé Letter</h3>
+                <p>Weekly design intelligence, delivered quietly. No spam — just thoughtful writing on architecture and interiors.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Your email address" aria-label="Email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p style="font-size: 0.8rem; margin-top: 16px; color: #8a8a8a;">By subscribing you agree to our Privacy Policy.</p>
+            </section>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" aria-label="Sidebar">
+            <!-- ABOUT WIDGET -->
+            <div class="sidebar-widget about-widget">
+                <h4>About Studio Morphé</h4>
+                <p>An independent journal exploring the built environment — from residential architecture to the smallest details of interior craft. Edited by <span class="author-name">Elena Marchetti</span> and <span class="author-name">Julian Hart</span>.</p>
+                <p style="font-size: 0.85rem; margin-bottom: 0;">We publish in-depth articles, practical guides, and critical essays for design professionals and curious homeowners.</p>
+            </div>
+
+            <!-- POPULAR ARTICLES -->
+            <div class="sidebar-widget">
+                <h4>Popular This Month</h4>
+                <ul>
+                    <li><a href="#">The Quiet Power of Neutral Palettes</a><div class="small-meta">12 min read · Interior Design</div></li>
+                    <li><a href="#">Concrete Poetry: Brutalist Homes</a><div class="small-meta">9 min read · Architecture</div></li>
+                    <li><a href="#">Layering Light: Three-Tier Approach</a><div class="small-meta">7 min read · Lighting</div></li>
+                    <li><a href="#">Small Space, Big Ideas</a><div class="small-meta">8 min read · Space Planning</div></li>
+                    <li><a href="#">The Truth About Engineered Wood</a><div class="small-meta">11 min read · Materials</div></li>
+                </ul>
+            </div>
+
+            <!-- LATEST ARTICLES -->
+            <div class="sidebar-widget">
+                <h4>Latest Articles</h4>
+                <ul>
+                    <li><a href="#">The New Kitchen: From Status Symbol to Living Lab</a><div class="small-meta">Mar 1 · 18 min</div></li>
+                    <li><a href="#">Adaptive Reuse: Turning Warehouses into Warm Homes</a><div class="small-meta">Feb 22 · 14 min</div></li>
+                    <li><a href="#">Sustainable Foundations: Building for a Warmer World</a><div class="small-meta">Feb 18 · 22 min</div></li>
+                    <li><a href="#">Glass Houses: Transparency, Privacy, and the Modern Facade</a><div class="small-meta">Feb 25 · 10 min</div></li>
+                </ul>
+            </div>
+
+            <!-- CATEGORIES LIST -->
+            <div class="sidebar-widget">
+                <h4>Explore Categories</h4>
+                <ul>
+                    <li><a href="#">Interior Design</a> (24)</li>
+                    <li><a href="#">Architecture</a> (18)</li>
+                    <li><a href="#">Home Design</a> (15)</li>
+                    <li><a href="#">Materials</a> (12)</li>
+                    <li><a href="#">Space Planning</a> (9)</li>
+                    <li><a href="#">Lighting</a> (8)</li>
+                    <li><a href="#">Furniture</a> (11)</li>
+                    <li><a href="#">Modern Homes</a> (14)</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">STUDIO <span style="font-style: italic; color: #9b6b4b;">MORPHÉ</span></div>
+                <p style="margin-top: 16px; max-width: 320px; font-size: 0.88rem;">Independent editorial on interior design and architecture. Published since 2019.</p>
+            </div>
+            <div>
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="#">Interior Design</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Materials</a></li>
+                    <li><a href="#">Lighting</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>About</h5>
+                <ul>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Editorial Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Advertise</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Studio Morphé. All rights reserved.</span>
+            <span>Made with restraint.</span>
+        </div>
+    </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+    (function() {
+        // --- NEWSLETTER FORM (prevent default) ---
+        const newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = newsletterForm.querySelector('input[type="email"]').value;
+                if (email) {
+                    alert('Thank you for subscribing to The Morphé Letter. (This is a demo — no data is sent.)');
+                    newsletterForm.reset();
+                }
+            });
+        }
+
+        // --- SMOOTH SCROLL FOR INTERNAL LINKS (optional) ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    })();
+</script>
+
+<!-- NOTE: This is a single-file demo. In production, images would be hosted and linked properly. All article links are set to "#" for demonstration. -->
+</body>
+</html>
